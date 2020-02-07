@@ -19,7 +19,7 @@ def pearson_correl_coeff(x,y):
     return covariance(x,y)/(std(x)*std(y))
 
 def n_elements_less_than_equal_value_in_list (element, x):
-    x = list(set(x))
+    x = list(set(x)) #make x unique
     filtered_list = list(filter(lambda y: y<= element, x))
     return len(filtered_list)
 
